@@ -1,0 +1,29 @@
+###
+GET http://localhost:9000/api/usuarios HTTP/1.1
+
+###
+POST http://localhost:9000/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "usu_email": "goku@hotmail.com",
+    "usu_clave": "contraseña",
+    "usu_nombres": "Edwin Giovany",
+    "usu_apellidos": "Patiño Castrillon",
+    "usu_acciones": "Developer"
+}
+
+###
+DELETE http://localhost:9000/api/usuarios/usu_id/4 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/usuarios/usu_id/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "usu_email": "goku@hotmail.com2",
+    "usu_clave": "contraseña2",
+    "usu_nombres": "Edwin Giovany2",
+    "usu_apellidos": "Patiño Castrillon2",
+    "usu_acciones": "Developer2"
+}
